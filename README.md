@@ -2,6 +2,12 @@
 
 A Streamlit dashboard for visualizing and reporting on species biodiversity data, connected to a PostgreSQL database.
 
+## Database Configuration
+
+> This project connects to a private PostgreSQL database and cannot be
+> run locally without access credentials. It is shared here for
+> portfolio and code reference purposes only.
+
 ## Project Structure
 
 ```
@@ -18,16 +24,16 @@ A Streamlit dashboard for visualizing and reporting on species biodiversity data
 
 ## Features
 
-- **Tab 1 – Khái quát**: Overview of all species with interactive map, pie chart, and bar charts.
-- **Tab 2 – Bộ lọc**: Filter species by taxonomy, conservation status, and other criteria. Export filtered results as a Word report.
-- **Tab 3 – Chi tiết**: Detailed view of a selected species including classification, conservation status, images, collection map, and export to Word report.
+- **Tab 1 – Overview of all species with interactive map, pie chart, and bar charts.
+- **Tab 2 – Filter species by taxonomy, conservation status, and other criteria. Export filtered results as a Word report.
+- **Tab 3 – Detailed view of a selected species including classification, conservation status, images, collection map, and export to Word report.
 
 ## Requirements
 
 Install dependencies:
 
 ```bash
-pip install streamlit psycopg2 pandas geopandas shapely contextily docxtpl python-docx requests pillow matplotlib plotly pydeck
+pip install -r requirements.txt
 ```
 
 ## Database Configuration
